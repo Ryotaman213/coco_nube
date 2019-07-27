@@ -12,19 +12,19 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/ba4c790ac3.js"></script>
   <style>
-    .bg {
-      background-image: url("{{ asset('storage/images/coco_nube_home.jpg') }}")
+    body {
+      background-image: url("{{ asset('storage/images/renga.png') }}")
     }
     p {
-      text-shadow: 3px 2px 0px rgba(0,0,0,0.7);
+      text-shadow: 3px 2px 0px rgba(255,255,255,0.4);
     }
   </style>
 </head>
-<body class="bg-dark">
-  <div class="contauner" >
+<body class="bg-white">
+  <div class="container" >
     @yield('content')
-    <footer class="bg-dark">
-      <p class="text-white text-center bg-dark">Copyright © 2019 coco nube. All Rights Reserved.</p>
+    <footer>
+      <p class="text-dark text-center bg-white">Copyright © 2019 coco nube. All Rights Reserved.</p>
     </footer>
   </div>
 </body>
