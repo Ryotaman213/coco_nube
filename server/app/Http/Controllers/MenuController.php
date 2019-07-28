@@ -8,7 +8,25 @@ use Illuminate\Support\Facades\DB;
 class MenuController extends Controller
 {
     public function index() {
-      $menus = DB::table('menus')->get();
-    return view('menu.index', ['menus' => $menus]);
+      $set_menus = DB::table('menus')->where('genre_id', '=', '1')->get();
+      $cut_menus = DB::table('menus')->where('genre_id', '=', '2')->get();
+      $color_menus = DB::table('menus')->where('genre_id', '=', '3')->get();
+      $parm_menus = DB::table('menus')->where('genre_id', '=', '4')->get();
+      $straight_menus = DB::table('menus')->where('genre_id', '=', '5')->get();
+      $treatment_menus = DB::table('menus')->where('genre_id', '=', '6')->get();
+      $hair_set_menus = DB::table('menus')->where('genre_id', '=', '7')->get();
+      $head_spa_menus = DB::table('menus')->where('genre_id', '=', '8')->get();
+      $other_menus = DB::table('menus')->where('genre_id', '=', '9')->get();
+    return view('menu.index', [
+      'set_menus' => $set_menus,
+      'cut_menus' => $cut_menus,
+      'color_menus' => $color_menus,
+      'parm_menus' => $parm_menus,
+      'straight_menus' => $straight_menus,
+      'treatment_menus' => $treatment_menus,
+      'hair_set_menus' => $hair_set_menus,
+      'head_spa_menus' => $head_spa_menus,
+      'other_menus' => $other_menus,
+    ]);
   }
 }
