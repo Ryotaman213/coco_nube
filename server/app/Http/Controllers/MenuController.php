@@ -17,6 +17,7 @@ class MenuController extends Controller
       $hair_set_menus = DB::table('menus')->where('genre_id', '=', '7')->get();
       $head_spa_menus = DB::table('menus')->where('genre_id', '=', '8')->get();
       $other_menus = DB::table('menus')->where('genre_id', '=', '9')->get();
+      $menu_titles = DB::table('genres')->get();
     return view('menu.index', [
       'set_menus' => $set_menus,
       'cut_menus' => $cut_menus,
@@ -27,6 +28,7 @@ class MenuController extends Controller
       'hair_set_menus' => $hair_set_menus,
       'head_spa_menus' => $head_spa_menus,
       'other_menus' => $other_menus,
+      'menu_titles' => $menu_titles,
     ]);
   }
 }
