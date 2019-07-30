@@ -18,3 +18,7 @@ Route::resource('/', 'HomeController')->only([
 Route::resource('/menu', 'MenuController')->only([
   'index'
 ]);
+
+Route::resource('/staff', 'StaffController')->only([
+  'index'
+]);
