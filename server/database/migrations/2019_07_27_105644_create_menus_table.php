@@ -15,10 +15,10 @@ class CreateMenusTable extends Migration
     {
         Schema::create('menus', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
-            $table->integer('price');
-            $table->integer('genre_id')->indexs();
-            $table->string('note');
+            $table->string('name')->comment('メニュー名');
+            $table->integer('price')->comment('料金');
+            $table->integer('genre_id')->indexs()->comment('メニュージャンル');
+            $table->string('note')->comment('備考');
             $table->timestamps();
         });
     }
