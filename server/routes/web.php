@@ -10,19 +10,21 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
+Route::get('/{any?}', function () {
+    return view('index');
+})->where('any', '.+');
+// Route::resource('/', 'HomeController')->only([
+//   'index'
+// ]);
 
-Route::resource('/', 'HomeController')->only([
-  'index'
-]);
+// Route::resource('/menu', 'MenuController')->only([
+//   'index'
+// ]);
 
-Route::resource('/menu', 'MenuController')->only([
-  'index'
-]);
+// Route::resource('/staff', 'StaffController')->only([
+//   'index'
+// ]);
 
-Route::resource('/staff', 'StaffController')->only([
-  'index'
-]);
-
-Route::resource('/reserve', 'ReserveController')->only([
-  'index'
-]);
+// Route::resource('/reserve', 'ReserveController')->only([
+//   'index'
+// ]);
