@@ -10,8 +10,8 @@
         <font-awesome-icon icon="cut" /> MENU</router-link>
     <router-link class="text-dark h5 text-center p-1" to="/staff">
         <font-awesome-icon icon="user" /> STAFF</router-link>
-    <router-link class="text-dark h5 text-center p-1" to="/reserve">
-        <font-awesome-icon icon="calendar-alt" /> RESERVE</router-link>
+    <router-link class="text-dark h5 text-center p-1" to="/reservation">
+        <font-awesome-icon icon="calendar-alt" /> RESERVATION</router-link>
     <router-link class="text-dark h5 text-center p-1" to="/">
         <font-awesome-icon icon="running" /> ACCESS</router-link>
     </div>

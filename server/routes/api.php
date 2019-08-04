@@ -25,6 +25,6 @@ Route::resource('/staff', 'StaffController')->only([
   'index'
 ]);
 
-Route::resource('/reserve', 'ReserveController')->only([
+Route::resource('/reservation', 'ReservationController')->only([
   'index'
 ]);
