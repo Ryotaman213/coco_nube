@@ -1,6 +1,6 @@
 
 <template>
-  <div style="width: 80%; margin: auto; font-size:0.8rem;">
+  <div style="max-width: 900px; margin: auto;">
     <div v-show="loading" id="loader"/>
     <table class="table table-striped table-bordered">
       <thead class="thead-dark" v-show="!loading">
@@ -10,7 +10,7 @@
           <th scope="col" style="width: 62%">備考</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="bg-white">
         <tr v-for="set_menu in set_menus">
           <td>{{ set_menu.name }}</td>
           <td>{{ set_menu.price | jpPrice}}円〜</td>
@@ -26,7 +26,7 @@
           <th scope="col" style="width: 62%">備考</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="bg-white">
         <tr v-for="cut_menu in cut_menus">
           <td>{{ cut_menu.name }}</td>
           <td>{{ cut_menu.price | jpPrice}}円〜</td>
@@ -42,7 +42,7 @@
           <th scope="col" style="width: 62%">備考</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="bg-white">
         <tr v-for="color_menu in color_menus">
           <td>{{ color_menu.name }}</td>
           <td>{{ color_menu.price | jpPrice}}円〜</td>
@@ -58,7 +58,7 @@
           <th scope="col" style="width: 62%">備考</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="bg-white">
         <tr v-for="parm_menu in parm_menus">
           <td>{{ parm_menu.name }}</td>
           <td>{{ parm_menu.price | jpPrice}}円〜</td>
@@ -74,7 +74,7 @@
           <th scope="col" style="width: 62%">備考</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="bg-white">
         <tr v-for="straight_menu in straight_menus">
           <td>{{ straight_menu.name }}</td>
           <td>{{ straight_menu.price | jpPrice}}円〜</td>
@@ -90,7 +90,7 @@
           <th scope="col" style="width: 62%">備考</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="bg-white">
         <tr v-for="treatment_menu in treatment_menus">
           <td>{{ treatment_menu.name }}</td>
           <td>{{ treatment_menu.price | jpPrice}}円〜</td>
@@ -106,7 +106,7 @@
           <th scope="col" style="width: 62%">備考</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="bg-white">
         <tr v-for="hair_set_menu in hair_set_menus">
           <td>{{ hair_set_menu.name }}</td>
           <td>{{ hair_set_menu.price | jpPrice}}円〜</td>
@@ -122,7 +122,7 @@
           <th scope="col" style="width: 62%">備考</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="bg-white">
         <tr v-for="head_spa_menu in head_spa_menus">
           <td>{{ head_spa_menu.name }}</td>
           <td>{{ head_spa_menu.price | jpPrice}}円〜</td>
@@ -138,7 +138,7 @@
           <th scope="col" style="width: 62%">備考</th>
         </tr>
       </thead>
-      <tbody>
+      <tbody class="bg-white">
         <tr v-for="other_menu in other_menus">
           <td>{{ other_menu.name }}</td>
           <td>{{ other_menu.price | jpPrice}}円〜</td>

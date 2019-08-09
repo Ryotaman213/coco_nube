@@ -24,9 +24,11 @@
   <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
+  <div id="container-wrapper" style="background-image: url('/storage/renga.png'); height: 100vh; overflow: scroll;">
   <div id="app"></div>
   <div>
-      <p class="text-dark text-center bg-white">Copyright © 2019 coco nube. All Rights Reserved.</p>
-    </div>
+      <p class="text-dark text-center">Copyright © 2019 coco nube. All Rights Reserved.</p>
+  </div>
+  </div>
 </body>
 </html>

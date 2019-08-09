@@ -18,8 +18,8 @@ class ReservationsTableSeeder extends Seeder
         $reservations = [
           [
           'menu_id' => rand(1,27),
-          'start_at' => Date::now()->addDays($i),
-          'end_at' => Date::now()->addDays($i)->addHours($i),
+          'start' => Date::now()->addDays($i),
+          'end' => Date::now()->addDays($i)->addHours(1),
           ],
         ];
         foreach ($reservations as $reservation) {

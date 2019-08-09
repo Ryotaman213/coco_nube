@@ -16,8 +16,8 @@ class CreateReservationsTable extends Migration
         Schema::create('reservations', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->integer('menu_id')->index()->comment('予約メニュー');
-            $table->dateTime('start_at')->comment('開始時間');
-            $table->dateTime('end_at')->comment('終了時間');
+            $table->dateTime('start')->comment('開始時間');
+            $table->dateTime('end')->comment('終了時間');
             $table->timestamps();
         });
     }

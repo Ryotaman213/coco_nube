@@ -18,6 +18,7 @@ class CreateMenusTable extends Migration
             $table->string('name')->comment('メニュー名');
             $table->integer('price')->comment('料金');
             $table->integer('genre_id')->indexs()->comment('メニュージャンル');
+            $table->integer('min')->comment('施術時間(分)');
             $table->string('note')->comment('備考');
             $table->timestamps();
         });

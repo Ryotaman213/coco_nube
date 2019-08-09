@@ -1,5 +1,5 @@
 <template>
-<div style="width: 80%; margin: auto;">
+<div style="max-width: 900px; margin: auto;">
   <h1>home</h1>
 </div>
 </template>

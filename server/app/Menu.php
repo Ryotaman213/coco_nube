@@ -10,6 +10,10 @@ class Menu extends Model
       return $this->belongsTo('App\Genre');
     }
 
+    public function reservations(){
+      return $this->hasMany('App\Reservation');
+    }
+
     public function getYenPriceAttribute() {
       return number_format($this->price) .'円';
     }
